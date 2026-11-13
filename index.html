@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Letter For Haniw 💌</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Lora:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="envelope-wrapper">
+    <div class="envelope" id="envelope">
+      <div class="envelope-flap"></div>
+      <div class="envelope-body">
+        <div class="heart-seal" id="seal" onclick="openLetter()">💌</div>
+      </div>
+    </div>
+    <p class="hint">klik untuk buka surat~</p>
+  </div>
+
+  <div class="letter-wrapper hidden" id="letterWrapper">
+    <div class="letter">
+      <div class="letter-header">
+        <span class="deco">🌸 ✉️ 🌸</span>
+        <h1>Dear Haniw,</h1>
+      </div>
+
+      <p class="letter-body">
+        Haii Haniw~ 🥺<br/><br/>
+        dengan segala keberanian dan sedikit deg-degan,
+        ingin mengajakmu untuk <em>ngedate</em> bareng aku! 🌷<br/><br/>
+        Tapi sebelum itu... boleh aku tanya beberapa hal dulu? >~<
+      </p>
+
+      <div class="form-section">
+        <!-- Tanggal -->
+        <div class="form-group">
+          <label>📅 Kamu maunya kapan?</label>
+          <input type="date" id="tanggal" />
+        </div>
+
+        <!-- Jam -->
+        <div class="form-group">
+          <label>⏰ Jadi aku jemput jam berapa nii?</label>
+          <input type="time" id="jam" />
+        </div>
+
+        <!-- Kegiatan -->
+        <div class="form-group">
+          <label>🎀 Mau ngapain kita?</label>
+          <div class="options" id="kegiatanOptions">
+            <button class="option-btn" data-group="kegiatan" data-value="Indoor Activity">🏠 Indoor Activity</button>
+            <button class="option-btn" data-group="kegiatan" data-value="Outdoor Activity">🌿 Outdoor Activity</button>
+            <button class="option-btn" data-group="kegiatan" data-value="Surprise Me!">🎁 Surprise Me!</button>
+          </div>
+        </div>
+
+        <!-- Kendaraan -->
+        <div class="form-group">
+          <label>🐎 Choose your chariot</label>
+          <div class="options" id="kendaraanOptions">
+            <button class="option-btn" data-group="kendaraan" data-value="Mobil">🚗 Mobil</button>
+            <button class="option-btn" data-group="kendaraan" data-value="Motor">🏍️ Motor</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="letter-footer">
+        <p class="footer-note">semoga kamu mau ya~ 🌸</p>
+        <button class="send-btn" id="sendBtn" onclick="sendToWhatsApp()">
+          💌 Let Me Know!
+        </button>
+      </div>
+
+      <div class="signature">
+        <p>Eagerly waiting,</p>
+        <p class="sig-name">Nopal 🌹</p>
+      </div>
+
+      <div class="deco-corner tl">🌸</div>
+      <div class="deco-corner tr">🌸</div>
+      <div class="deco-corner bl">🌸</div>
+      <div class="deco-corner br">🌸</div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
