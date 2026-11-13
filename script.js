@@ -103,7 +103,7 @@ function sendToWhatsApp() {
   }
 
   const pesan =
-    `aloowww nopal\n` +
+    `aloowww nopal\n\n` +
     `hayuuuk aku mau banget ngedate sama kamuu hihi.\n` +
     `gimana kalau kita jalan di tanggal *${tanggal}*. biar pas waktunya, nanti kamu jemput aku jam *${jam}*-an yaa. Gimana kalau nanti *${kegiatan}* ajaa hihi lagi pengen itu soalnya. tapi nanti kita naik *${kendaraan}* aja yaa biar enak juga hihii\n\n` +
     `jangan lupa yaww ><✨`;
