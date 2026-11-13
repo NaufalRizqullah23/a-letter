@@ -1,1 +1,1 @@
-const WA_LINK = "https://wa.me/qr/WMH6VRVUW3HTA1";
+const WA_NUMBER = atob("MDgyMjE3Nzc0MDcz");

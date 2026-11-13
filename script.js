@@ -108,6 +108,6 @@ function sendToWhatsApp() {
     `gimana kalau kita jalan di tanggal *${tanggal}*. biar pas waktunya, nanti kamu jemput aku jam *${jam}*-an yaa. Gimana kalau nanti *${kegiatan}* ajaa hihi lagi pengen itu soalnya. tapi nanti kita naik *${kendaraan}* aja yaa biar enak juga hihii\n\n` +
     `jangan lupa yaww ><✨`;
 
-  const url = `${WA_LINK}?text=${encodeURIComponent(pesan)}`;
+  const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(pesan)}`;
   window.open(url, "_blank");
 }
